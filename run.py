@@ -27,15 +27,15 @@ start_time = time.time()
 max_epochs = Value.max_epochs
 epoch = Generation.populate(Value.population_number)
 
-print(epoch.population[0].gene)
-print(epoch.population[0].phenotype)
+#print(epoch.population[0].gene)
+#print(epoch.population[0].phenotype)
 
-# with tqdm.tqdm(total=max_epochs, position=1) as pbar:
-#     for i in range(max_epochs):
-#         pbar.set_description_str(f'Current min score: {epoch.min_score}')
-#         if epoch.min_score == 0:
-#             success(epoch.min_individual, start_time)
-#             break
-#         else:
-#             epoch = epoch.update()
-#             pbar.update(1)
+ with tqdm.tqdm(total=max_epochs, position=1) as pbar:
+     for i in range(max_epochs):
+         pbar.set_description_str(f'Current min score: {epoch.min_score}')
+         if epoch.min_score == 0:
+             success(epoch.min_individual, start_time)
+             break
+         else:
+             epoch = epoch.update()
+             pbar.update(1)
