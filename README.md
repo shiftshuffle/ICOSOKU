@@ -1,6 +1,6 @@
 #Icosoku genetic solver
 
-a genetic python solver for the [icosoku puzzle]()
+a genetic python solver for the [icosoku puzzle](https://en.wikipedia.org/wiki/Icosoku)
 the config.yml file contains the information of the pins
 following the convention in this [constraint based solver ](https://www.nearly42.org/games/icosoku-solver/)
 
