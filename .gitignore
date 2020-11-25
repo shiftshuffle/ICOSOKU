@@ -1,0 +1,10 @@
+# macOS Files
+.DS_Store
+
+#IDE metadata
+**.idea/**
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
